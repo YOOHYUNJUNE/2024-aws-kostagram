@@ -1,0 +1,11 @@
+docker run \
+-d \
+--name mysql-container \
+-p 3306:3306 \
+-e MYSQL_ROOT_PASSWORD=1234 \
+-e MYSQL_USER=yoo \
+-e MYSQL_PASSWORD=1234 \
+-e MYSQL_DATABASE=rest_blog_db \
+-e TZ=Asia/Seoul \
+--network kosta-net \
+mysql:8
